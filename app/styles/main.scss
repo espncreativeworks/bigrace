@@ -7,6 +7,13 @@ $body-bg: #f2f2f2;
 
 $espn-container-width: 924px;
 
+html, 
+body, 
+body > .hidden-xs:first-child, 
+.content {
+  height: 100%;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -36,10 +43,10 @@ $espn-container-width: 924px;
   }
 }
 
-#large {
+#large, #mobile {
   width: 100%;
-  min-height: 3600px;
-  //margin-top: 81px;
+  min-height: 0;
+  height: 100%;
 }
 
 .bg-elements .container,
@@ -47,12 +54,6 @@ $espn-container-width: 924px;
   width: $espn-container-width !important;
   margin-left: auto;
   margin-right: auto;
-}
-
-#mobile {
-  width: 100%;
-  min-height: 4800px;
-  //margin-top: 40px;
 }
 
 #nav .espnlogo {
